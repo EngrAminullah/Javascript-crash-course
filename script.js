@@ -33,4 +33,6 @@ let boolean=true;
 let BigInt=('larger integer than the number ccan hold')
 
 let petrol =true;
-console.log(petrol)
+console.log(petrol);
+
+console.log(typeof true)
