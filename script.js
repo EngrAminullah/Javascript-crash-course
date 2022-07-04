@@ -12,3 +12,12 @@ let person ='jonas';
 let PI =3.1415;
 let myFirstJob='programmer';
 let mySecondJob='Teacher';
+
+
+let country ='Gapshapistan';
+let contenent='Sub-continent';
+let population='9000M'
+
+console.log(country)
+console.log(contenent)
+console.log(population)
