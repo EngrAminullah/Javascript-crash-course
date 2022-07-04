@@ -42,4 +42,7 @@ console.log(typeof petrol);
 
 let year;
 console.log(year);
+console.log(typeof year);
+
+year=1993;
 console.log(typeof year)
