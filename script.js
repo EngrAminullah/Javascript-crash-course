@@ -21,3 +21,11 @@ let population='9000M'
 console.log(country)
 console.log(contenent)
 console.log(population)
+
+let sevenPrimitiveDataTypes=()=>{'numbers','string','boolean','undefined','null','symbol','BigInt'};
+let number=24;
+let string='amin';
+let boolean=true;
+let undefined;
+let => null;
+let BigInt=('larger integer than the number ccan hold')
