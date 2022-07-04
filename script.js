@@ -28,4 +28,6 @@ let string='amin';
 let boolean=true;
 let undefined;
 let => null;
+
+/// Javvascript comment
 let BigInt=('larger integer than the number ccan hold')
