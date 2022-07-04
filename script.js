@@ -38,4 +38,8 @@ console.log(petrol);
 console.log(typeof true);
 
 petrol='ak sawa assi'
-console.log(typeof petrol)
+console.log(typeof petrol);
+
+let year;
+console.log(year);
+console.log(typeof year)
