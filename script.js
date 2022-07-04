@@ -26,8 +26,11 @@ let sevenPrimitiveDataTypes=()=>{'numbers','string','boolean','undefined','null'
 let number=24;
 let string='amin';
 let boolean=true;
-let undefined;
-let => null;
+// let undefined;
+// let => null;
 
 /// Javvascript comment
 let BigInt=('larger integer than the number ccan hold')
+
+let petrol =true;
+console.log(petrol)
