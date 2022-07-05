@@ -91,12 +91,32 @@
 // const massJohn = 92;
 // const heightJohn = 1.95;
 
-const massMark = 95;
-const heightMark = 1.88;
-const massJohn = 85;
-const heightJohn = 1.76;
+// const massMark = 95;
+// const heightMark = 1.88;
+// const massJohn = 85;
+// const heightJohn = 1.76;
 
-const BMIMark = massMark / heightMark ** 2;
-const BMIJohn = massJohn / (heightJohn * heightJohn);
-const markHiegherBMI = BMIMark > BMIJohn;
-console.log(BMIMark, BMIJohn, markHiegherBMI);
+// const BMIMark = massMark / heightMark ** 2;
+// const BMIJohn = massJohn / (heightJohn * heightJohn);
+// const markHiegherBMI = BMIMark > BMIJohn;
+// console.log(BMIMark, BMIJohn, markHiegherBMI);
+
+
+const firstName='Amin';
+const job ='teacher';
+const birthyear='1993';
+const year=2037;
+
+const Amin ="I'm " + firstName +' a ' +(year - birthyear)+' year '+ job;
+console.log(Amin)
+
+const AminNew=`i'm ${firstName}, a ${year-birthyear} year old ${job}`
+console.log(AminNew)
+
+console.log(`just a regular string`)
+console.log('string with \n\
+multiple \n\
+lines');
+console.log(`string with 
+multiple
+ lines`)
