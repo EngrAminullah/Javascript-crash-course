@@ -86,21 +86,26 @@
 
 //-----------------Coding challenge##1------------
 
-// const massMark = 78;
-// const heightMark = 1.69;
-// const massJohn = 92;
-// const heightJohn = 1.95;
+const massMark = 78;
+const heightMark = 1.69;
+const massJohn = 92;
+const heightJohn = 1.95;
 
 // const massMark = 95;
 // const heightMark = 1.88;
 // const massJohn = 85;
 // const heightJohn = 1.76;
 
-// const BMIMark = massMark / heightMark ** 2;
-// const BMIJohn = massJohn / (heightJohn * heightJohn);
-// const markHiegherBMI = BMIMark > BMIJohn;
-// console.log(BMIMark, BMIJohn, markHiegherBMI);
+const BMIMark = massMark / heightMark ** 2;
+const BMIJohn = massJohn / (heightJohn * heightJohn);
+const markHiegherBMI = BMIMark > BMIJohn;
+console.log(BMIMark, BMIJohn, markHiegherBMI);
 
+if(BMIMark>BMIJohn){
+    console.log(`Mark's BMI (${BMIMark}) is greater than the John's BMI (${BMIJohn})!`)
+}else{
+    console.log(`John's (${BMIJohn}) BMI is greater than the Mark's BMI(${BMIMark})!`)
+}
 
 // const firstName='Amin';
 // const job ='teacher';
@@ -130,12 +135,12 @@
 //     console.log(`Sarah is too young. Wait another ${yearsLeft} years :)!`)
 // }
 
-const birthYear=2001;
+// const birthYear=2001;
 
-let century;
-if(birthYear <= 2000){
-    century=20;
-}else{
-    century=21;
-}
-console.log(century)
+// let century;
+// if(birthYear <= 2000){
+//     century=20;
+// }else{
+//     century=21;
+// }
+// console.log(century)
