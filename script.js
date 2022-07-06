@@ -102,21 +102,30 @@
 // console.log(BMIMark, BMIJohn, markHiegherBMI);
 
 
-const firstName='Amin';
-const job ='teacher';
-const birthyear='1993';
-const year=2037;
+// const firstName='Amin';
+// const job ='teacher';
+// const birthyear='1993';
+// const year=2037;
 
-const Amin ="I'm " + firstName +' a ' +(year - birthyear)+' year '+ job;
-console.log(Amin)
+// const Amin ="I'm " + firstName +' a ' +(year - birthyear)+' year '+ job;
+// console.log(Amin)
 
-const AminNew=`i'm ${firstName}, a ${year-birthyear} year old ${job}`
-console.log(AminNew)
+// const AminNew=`i'm ${firstName}, a ${year-birthyear} year old ${job}`
+// console.log(AminNew)
 
-console.log(`just a regular string`)
-console.log('string with \n\
-multiple \n\
-lines');
-console.log(`string with 
-multiple
- lines💕`)
+// console.log(`just a regular string`)
+// console.log('string with \n\
+// multiple \n\
+// lines');
+// console.log(`string with 
+// multiple
+//  lines💕`)
+
+
+const age=19;
+if(age>=18){
+    console.log(`Sarah can start driving license`)
+}else{
+    const yearsLeft=18-age;
+    console.log(`Sarah is too young. Wait another ${yearsLeft} years :)!`)
+}
