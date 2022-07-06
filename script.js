@@ -164,3 +164,11 @@ console.log('23'/'2')
 let n='1' +1;
 n=n-1;
 console.log(n)
+
+//--------------5 falsy values--------------------
+//---0,'',undefined, null, NaN
+console.log(Boolean(0));
+console.log(Boolean(undefined))
+console.log(Boolean('Amin'))
+console.log(Boolean({}))
+console.log('')
