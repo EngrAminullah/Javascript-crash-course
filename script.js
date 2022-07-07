@@ -195,7 +195,7 @@ if(age==18){
     // console.log('Hey everyOne, I am 18 plus! (Loose)')
 }
 
-const favourite = Number(prompt("whats your fav number!!"))
+const favourite = Number(window.prompt("whats your fav number!!"))
 // console.log(favourite)
 // console.log(typeof favourite)
 
