@@ -122,10 +122,9 @@
 // console.log('string with \n\
 // multiple \n\
 // lines');
-// console.log(`string with 
+// console.log(`string with
 // multiple
 //  lines💕`)
-
 
 // const age=19;
 // if(age>=18){
@@ -152,7 +151,6 @@
 // console.log(Number('Amin'))
 // console.log(typeof NaN)
 // console.log(String(23), 23)
-
 
 //----------------- type Coercion------------------
 
@@ -189,16 +187,15 @@
 
 // const age ='18';
 // if(age===18){ // '23'==23, '23'===string
-    // console.log('Hey everyOne, I am 18 plus! (Strick)')
+// console.log('Hey everyOne, I am 18 plus! (Strick)')
 // }
 // if(age==18){
-    // console.log('Hey everyOne, I am 18 plus! (Loose)')
+// console.log('Hey everyOne, I am 18 plus! (Loose)')
 // }
 
 // const favourite = Number(window.prompt("whats your fav number!!"))
 // console.log(favourite)
 // console.log(typeof favourite)
-
 
 // if(favourite===23){
 //     console.log('Cool! 23 is a great number')
@@ -214,13 +211,12 @@
 //     console.log('why not 23?')
 // }
 
+// const hasDriversLiscence=true //A
+// const hasGoodVision=true//B
 
-const hasDriversLiscence=true //A
-const hasGoodVision=true//B
-
-console.log(hasDriversLiscence && hasGoodVision)
-console.log(hasDriversLiscence || hasGoodVision)
-console.log(!hasDriversLiscence)
+// console.log(hasDriversLiscence && hasGoodVision)
+// console.log(hasDriversLiscence || hasGoodVision)
+// console.log(!hasDriversLiscence)
 
 // if (hasDriversLiscence && hasGoodVision){
 //     console.log('sarah is able to drive')
@@ -228,11 +224,24 @@ console.log(!hasDriversLiscence)
 //     console.log('Someone else should drive')
 // }
 
-const isTired=false; //C
-console.log(hasDriversLiscence && hasGoodVision && isTired)
+// const isTired=false; //C
+// console.log(hasDriversLiscence && hasGoodVision && isTired)
 
-if (hasDriversLiscence && hasGoodVision && isTired){
-    console.log('sarah is able to drive')
+// if (hasDriversLiscence && hasGoodVision && isTired){
+//     console.log('sarah is able to drive')
+// }else{
+//     console.log('Someone else should drive')
+// }
+
+const scoreTalegram = (88 + 100 + 89) / 3;
+const scoreBadar = (86 + 100 + 91) / 3;
+console.log(scoreTalegram, scoreBadar);
+if (scoreTalegram > scoreBadar && scoreTalegram >= 100) {
+  console.log("Talegram win the trophy 🏆");
+} else if (scoreBadar > scoreTalegram && scoreBadar >= 100) {
+  console.log("Badar win the trophy 🏆");
+} else if (scoreTalegram === scoreBadar && scoreTalegram >= 100 && scoreBadar >= 100) {
+  console.log("Both win the trophy 🏆");
 }else{
-    console.log('Someone else should drive')
+    console.log('no one wins the trophy 😂')
 }
