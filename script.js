@@ -432,16 +432,49 @@
 // console.log(amin)
 
 //----Exercise--------
-const calcAge =function(birthYear){
-    return 2037-birthYear
+// const calcAge =function(birthYear){
+//     return 2037-birthYear
+// }
+// const years = [1990,1967,2002,2010,2018];
+
+// console.log( calcAge(years))
+
+// const age1 = calcAge(years[0])
+// const age2 = calcAge(years[1])
+// const age3 = calcAge(years[years.length-1])
+// console.log(age1,age2,age3)
+// const ages=[calcAge(years[0]),calcAge(years[1]),calcAge(years[years.length-1])];
+// console.log(ages)
+
+
+//------------Basic array operations----------
+
+const friends=['Amin', 'Bacha', 'sajjid'];
+// Add elements
+const newLength=friends.push('Mansoor');
+console.log(friends)
+console.log(newLength)
+
+friends.unshift('attyka');
+console.log(friends)
+
+// Remove elements
+friends.pop();
+console.log(friends)
+friends.pop();
+console.log(friends)
+friends.shift();
+console.log(friends)
+console.log(friends.indexOf('Bacha'))
+console.log(friends.includes('Amin'))
+console.log(friends.includes('Attyka'))
+friends.push(23)
+console.log(friends.includes(23))
+
+friends.push('mansoor')
+if(friends.includes('mansoor')){
+    console.log('You have a friend called mansoor')
+}else{
+    console.log('There is no any mansoor wansoor')
 }
-const years = [1990,1967,2002,2010,2018];
 
-console.log( calcAge(years))
-
-const age1 = calcAge(years[0])
-const age2 = calcAge(years[1])
-const age3 = calcAge(years[years.length-1])
-console.log(age1,age2,age3)
-const ages=[calcAge(years[0]),calcAge(years[1]),calcAge(years[years.length-1])];
-console.log(ages)
