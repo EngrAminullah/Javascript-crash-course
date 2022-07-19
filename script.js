@@ -387,28 +387,46 @@
 
 //------------------Functions challenge---------------------
 
-const calcAverage=(a,b,c)=> (a+b+c)/3;
-console.log(calcAverage(3,4,5));
+// const calcAverage=(a,b,c)=> (a+b+c)/3;
+// console.log(calcAverage(3,4,5));
 
-//Test 1
-let scoreDolphins=calcAverage(44,23,71);
-let scoreKoalas=calcAverage(65,54,49)
-console.log(scoreDolphins,scoreKoalas)
+// //Test 1
+// let scoreDolphins=calcAverage(44,23,71);
+// let scoreKoalas=calcAverage(65,54,49)
+// console.log(scoreDolphins,scoreKoalas)
 
-const checkWinner = function(avgDolphins, avgKoalas){
-    if(avgDolphins>= 2* avgKoalas){
-        console.log(`Dolphins win 🏆 (${avgDolphins} vs.${avgKoalas})`)
-    }else if(avgKoalas >= 2*avgDolphins){
-        console.log(`Koalas win 🏆 (${avgKoalas} vs.${avgDolphins})`)
-    }else{
-        console.log('no team wins...')
-    }
-}
-checkWinner(scoreDolphins,scoreKoalas)
-checkWinner(600, 123)
+// const checkWinner = function(avgDolphins, avgKoalas){
+//     if(avgDolphins>= 2* avgKoalas){
+//         console.log(`Dolphins win 🏆 (${avgDolphins} vs.${avgKoalas})`)
+//     }else if(avgKoalas >= 2*avgDolphins){
+//         console.log(`Koalas win 🏆 (${avgKoalas} vs.${avgDolphins})`)
+//     }else{
+//         console.log('no team wins...')
+//     }
+// }
+// checkWinner(scoreDolphins,scoreKoalas)
+// checkWinner(600, 123)
 
-// Test 2
-scoreDolphins=calcAverage(85,54,41);
-scoreKoalas=calcAverage(23,34,27)
-console.log(scoreDolphins, scoreKoalas)
-checkWinner(scoreDolphins, scoreKoalas)
+// // Test 2
+// scoreDolphins=calcAverage(85,54,41);
+// scoreKoalas=calcAverage(23,34,27)
+// console.log(scoreDolphins, scoreKoalas)
+// checkWinner(scoreDolphins, scoreKoalas)
+///----------------------------Arrays------------------------
+const friend1='Amin';
+const friend2='bacha';
+const friend3='Sajjid';
+const friends=['Amin', 'Bacha', 'sajjid'];
+console.log(friends);
+const years=new Array(1991,1984,2008,2020);
+console.log(friends[0])
+console.log(friends[2])
+
+console.log(friends.length)
+console.log(friends[friends.length -1])
+friends[2]='Mansoor'
+console.log(friends)
+
+const firstName='Amin';
+const amin=[firstName,'Ullah',2037-1993,'teacher',friends];
+console.log(amin)
