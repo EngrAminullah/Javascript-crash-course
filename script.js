@@ -449,32 +449,41 @@
 
 //------------Basic array operations----------
 
-const friends=['Amin', 'Bacha', 'sajjid'];
-// Add elements
-const newLength=friends.push('Mansoor');
-console.log(friends)
-console.log(newLength)
+// const friends=['Amin', 'Bacha', 'sajjid'];
+// // Add elements
+// const newLength=friends.push('Mansoor');
+// console.log(friends)
+// console.log(newLength)
 
-friends.unshift('attyka');
-console.log(friends)
+// friends.unshift('attyka');
+// console.log(friends)
 
-// Remove elements
-friends.pop();
-console.log(friends)
-friends.pop();
-console.log(friends)
-friends.shift();
-console.log(friends)
-console.log(friends.indexOf('Bacha'))
-console.log(friends.includes('Amin'))
-console.log(friends.includes('Attyka'))
-friends.push(23)
-console.log(friends.includes(23))
+// // Remove elements
+// friends.pop();
+// console.log(friends)
+// friends.pop();
+// console.log(friends)
+// friends.shift();
+// console.log(friends)
+// console.log(friends.indexOf('Bacha'))
+// console.log(friends.includes('Amin'))
+// console.log(friends.includes('Attyka'))
+// friends.push(23)
+// console.log(friends.includes(23))
 
-friends.push('mansoor')
-if(friends.includes('mansoor')){
-    console.log('You have a friend called mansoor')
-}else{
-    console.log('There is no any mansoor wansoor')
+// friends.push('mansoor')
+// if(friends.includes('mansoor')){
+//     console.log('You have a friend called mansoor')
+// }else{
+//     console.log('There is no any mansoor wansoor')
+// }
+
+//------------------arrays challenge--------------------
+
+const calcTip=function(bill){
+    return bill >=50 && bill <=300 ?bill *0.15:bill*0.2;
 }
-
+const bills=[125,555,44];
+const tips=[calcTip(bills[0]),calcTip(bills[1]),calcTip(bills[2])];
+const totals=[bills[0]+tips[0],bills[1]+tips[1],bills[2]+tips[2]]
+console.log(bills,tips,totals )
