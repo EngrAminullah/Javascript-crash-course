@@ -307,20 +307,27 @@
 // const tip=bill <= 300 && bill >= 50 ? bill * 0.15:bill* 0.2;
 // console.log(`The bill was ${bill}, The tip was ${tip}, and the total value ${bill + tip}`)
 
-function logger() {
-  console.log("My name is sheela");
-}
-// Calling/ running/ invoking function
-logger();
-logger();
+// function logger() {
+//   console.log("My name is sheela");
+// }
+// // Calling/ running/ invoking function
+// logger();
+// logger();
 
-function fruitprocessor(apples, oranges) {
-  console.log(apples, oranges);
-  const juice = `juice with ${apples} apples and ${oranges} oranges.`;
-  return juice;
-}
+// function fruitprocessor(apples, oranges) {
+//   console.log(apples, oranges);
+//   const juice = `juice with ${apples} apples and ${oranges} oranges.`;
+//   return juice;
+// }
 
-const appleJuice = fruitprocessor(8, 6);
-console.log(appleJuice);
-const appleOrangeJuice= fruitprocessor(2,8);
-console.log(appleOrangeJuice)
+// const appleJuice = fruitprocessor(8, 6);
+// console.log(appleJuice);
+// const appleOrangeJuice= fruitprocessor(2,8);
+// console.log(appleOrangeJuice)
+
+
+function calcAge1(birthYear){
+    return 2037-birthYear
+}
+const age1=calcAge1(1991);
+console.log(age1)
