@@ -248,7 +248,6 @@
 
 //------------ Switch statement ---------------
 
-
 // const day ='tuesday'
 // switch (day){
 //     case 'monday':
@@ -287,7 +286,6 @@
 //     console.log('not valid day')
 // }
 
-
 //-------------- Conditional (ternary) operator---------
 // const age =23;
 // age >=18 ? console.log('I like to drink wine 🍷') :
@@ -295,7 +293,6 @@
 
 // const drink = age >= 18 ? 'wine 🍷' :'water 💧';
 // console.log (drink)
-
 
 // let drink2;
 // if(age >= 18){
@@ -306,6 +303,24 @@
 // console.log(drink2)
 // console.log(`I love to drink ${age >= 18 ? 'wine 🍷' :'water 💧'}`)
 
-const bill=275;
-const tip=bill <= 300 && bill >= 50 ? bill * 0.15:bill* 0.2;
-console.log(`The bill was ${bill}, The tip was ${tip}, and the total value ${bill + tip}`)
+// const bill=275;
+// const tip=bill <= 300 && bill >= 50 ? bill * 0.15:bill* 0.2;
+// console.log(`The bill was ${bill}, The tip was ${tip}, and the total value ${bill + tip}`)
+
+function logger() {
+  console.log("My name is sheela");
+}
+// Calling/ running/ invoking function
+logger();
+logger();
+
+function fruitprocessor(apples, oranges) {
+  console.log(apples, oranges);
+  const juice = `juice with ${apples} apples and ${oranges} oranges.`;
+  return juice;
+}
+
+const appleJuice = fruitprocessor(8, 6);
+console.log(appleJuice);
+const appleOrangeJuice= fruitprocessor(2,8);
+console.log(appleOrangeJuice)
