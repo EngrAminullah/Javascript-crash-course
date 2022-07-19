@@ -413,20 +413,35 @@
 // console.log(scoreDolphins, scoreKoalas)
 // checkWinner(scoreDolphins, scoreKoalas)
 ///----------------------------Arrays------------------------
-const friend1='Amin';
-const friend2='bacha';
-const friend3='Sajjid';
-const friends=['Amin', 'Bacha', 'sajjid'];
-console.log(friends);
-const years=new Array(1991,1984,2008,2020);
-console.log(friends[0])
-console.log(friends[2])
+// const friend1='Amin';
+// const friend2='bacha';
+// const friend3='Sajjid';
+// const friends=['Amin', 'Bacha', 'sajjid'];
+// console.log(friends);
+// const y=new Array(1991,1984,2008,2020);
+// console.log(friends[0])
+// console.log(friends[2])
 
-console.log(friends.length)
-console.log(friends[friends.length -1])
-friends[2]='Mansoor'
-console.log(friends)
+// console.log(friends.length)
+// console.log(friends[friends.length -1])
+// friends[2]='Mansoor'
+// console.log(friends)
 
-const firstName='Amin';
-const amin=[firstName,'Ullah',2037-1993,'teacher',friends];
-console.log(amin)
+// const firstName='Amin';
+// const amin=[firstName,'Ullah',2037-1993,'teacher',friends];
+// console.log(amin)
+
+//----Exercise--------
+const calcAge =function(birthYear){
+    return 2037-birthYear
+}
+const years = [1990,1967,2002,2010,2018];
+
+console.log( calcAge(years))
+
+const age1 = calcAge(years[0])
+const age2 = calcAge(years[1])
+const age3 = calcAge(years[years.length-1])
+console.log(age1,age2,age3)
+const ages=[calcAge(years[0]),calcAge(years[1]),calcAge(years[years.length-1])];
+console.log(ages)
