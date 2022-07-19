@@ -350,14 +350,36 @@
 // console.log(yearsUntilRetirement(1991, 'Amin'))
 // console.log(yearsUntilRetirement(1995, 'Bacha'))
 //--------------Functions calling other functions-----------------
-function cutFruirPieces(fruit){
-    return fruit * 4
+// function cutFruirPieces(fruit){
+//     return fruit * 4
+// }
+// function fruitProcessor(apples, oranges) {
+//     const applePieces = cutFruirPieces(apples);
+//     const orangePieces = cutFruirPieces(oranges)
+//     console.log(apples, oranges);
+//     const juice = `juice with ${applePieces} piece of apple and ${orangePieces} pieces of oranges.`;
+//     return juice;
+//   }
+//   console.log(fruitProcessor(2,3))
+
+
+const calcAge = function(birthYear){
+    return 2037 - birthYear 
 }
-function fruitProcessor(apples, oranges) {
-    const applePieces = cutFruirPieces(apples);
-    const orangePieces = cutFruirPieces(oranges)
-    console.log(apples, oranges);
-    const juice = `juice with ${applePieces} piece of apple and ${orangePieces} pieces of oranges.`;
-    return juice;
-  }
-  console.log(fruitProcessor(2,3))
+
+const yearsUntilRetirement = function (birthYear, firstName) {
+    const age=calcAge (birthYear);
+    const retirement =65-age;
+    if (retirement >0){
+        
+        console.log(`${firstName} retires in ${retirement} years`);
+        return retirement;
+    }else{
+        
+        console.log(`${firstName} has already retired 🥧`);
+        return -1
+    }
+    // return `${firstName} retires in ${retirement} years`
+}
+console.log(yearsUntilRetirement (1991, 'Amin'))
+console.log(yearsUntilRetirement (1970, 'Bacha'))
