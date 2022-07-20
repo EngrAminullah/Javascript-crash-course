@@ -362,28 +362,26 @@
 //   }
 //   console.log(fruitProcessor(2,3))
 
-
 // const calcAge = function(birthYear){
-//     return 2037 - birthYear 
+//     return 2037 - birthYear
 // }
 
 // const yearsUntilRetirement = function (birthYear, firstName) {
 //     const age=calcAge (birthYear);
 //     const retirement =65-age;
 //     if (retirement >0){
-        
+
 //         console.log(`${firstName} retires in ${retirement} years`);
 //         return retirement;
 //     }else{
-        
+
 //         console.log(`${firstName} has already retired 🥧`);
 //         return -1
-    // }
-    // return `${firstName} retires in ${retirement} years`
+// }
+// return `${firstName} retires in ${retirement} years`
 // }
 // console.log(yearsUntilRetirement (1991, 'Amin'))
 // console.log(yearsUntilRetirement (1970, 'Bacha'))
-
 
 //------------------Functions challenge---------------------
 
@@ -445,7 +443,6 @@
 // console.log(age1,age2,age3)
 // const ages=[calcAge(years[0]),calcAge(years[1]),calcAge(years[years.length-1])];
 // console.log(ages)
-
 
 //------------Basic array operations----------
 
@@ -543,82 +540,122 @@
 //         birthYear:1991,
 //         job:'teacher',
 //         friends:['Bacha','Sajid','Mansoor'],
-        // hasDriversLicense:true,
+// hasDriversLicense:true,
 
-        // calcAge: function (birthYear){
-        //     return 2037 - birthYear
-        // }
+// calcAge: function (birthYear){
+//     return 2037 - birthYear
+// }
 
-        // calcAge: function(){
-        //     console.log(this);
-        //     return 2037 - this.birthYear;
-        // }
+// calcAge: function(){
+//     console.log(this);
+//     return 2037 - this.birthYear;
+// }
 
-    //     calcAge: function(){
-    //         this.age= 2037 - this.birthYear;
-    //         return this.age;
-    //     },
-    //     getSummary:function(){
-    //         return `${this.firstName} is a ${this.calcAge()} old ${this.job}, and he has ${this.hasDriversLicense ? 'a':'no'} driver's license `
-    //     }
-    // };
-    // console.log(amin.calcAge());
-    // console.log(amin.age);
-    // console.log(amin.age);
-    // console.log(amin.age);
-    // console.log(amin['calcAge'](1991))
+//     calcAge: function(){
+//         this.age= 2037 - this.birthYear;
+//         return this.age;
+//     },
+//     getSummary:function(){
+//         return `${this.firstName} is a ${this.calcAge()} old ${this.job}, and he has ${this.hasDriversLicense ? 'a':'no'} driver's license `
+//     }
+// };
+// console.log(amin.calcAge());
+// console.log(amin.age);
+// console.log(amin.age);
+// console.log(amin.age);
+// console.log(amin['calcAge'](1991))
 
-    //Challenge
-    //"amin is a 46 years old teacher. and he has a driver license"
-    // console.log(amin.getSummary())
+//Challenge
+//"amin is a 46 years old teacher. and he has a driver license"
+// console.log(amin.getSummary())
 
-    // const mark ={
-    //     fullName:'Mark Miller',
-    //     mass:78,
-    //     height:1.69,
-    //     calcBMI:function(){
-    //         this.bmi=this.mass/this.height ** 2;
-    //         return this.bmi
-    //     }
-    // };
+// const mark ={
+//     fullName:'Mark Miller',
+//     mass:78,
+//     height:1.69,
+//     calcBMI:function(){
+//         this.bmi=this.mass/this.height ** 2;
+//         return this.bmi
+//     }
+// };
 
-    // const john={
-    //     fullName:'john Smith',
-    //     mass:92,
-    //     height:1.95,
-    //     calcBMI:function(){
-    //         this.bmi=this.mass/this.height ** 2;
-    //         return this.bmi
-    //     }
-    // }
+// const john={
+//     fullName:'john Smith',
+//     mass:92,
+//     height:1.95,
+//     calcBMI:function(){
+//         this.bmi=this.mass/this.height ** 2;
+//         return this.bmi
+//     }
+// }
 
-    // mark.calcBMI();
-    // john.calcBMI();
-    // console.log(mark.bmi, john.bmi)
-    // console.log(john.bmi)
+// mark.calcBMI();
+// john.calcBMI();
+// console.log(mark.bmi, john.bmi)
+// console.log(john.bmi)
 
-    //"john Smith's BMI (28.3) is higher Than Mark Miller's (23.9) "
+//"john Smith's BMI (28.3) is higher Than Mark Miller's (23.9) "
 
-    // if (mark.bmi > john.bmi){
-    //     console.log(`${mark.fullName}'s BMI (${mark.bmi}) is higher than ${john.fullName}'s BMI (${john.bmi})`)
-    // }else if(john.bmi > mark.bmi){
-    //     console.log(`${john.fullName}'s BMI (${john.bmi}) is higher than ${mark.fullName}'s BMI (${mark.bmi})`)
-    // }
+// if (mark.bmi > john.bmi){
+//     console.log(`${mark.fullName}'s BMI (${mark.bmi}) is higher than ${john.fullName}'s BMI (${john.bmi})`)
+// }else if(john.bmi > mark.bmi){
+//     console.log(`${john.fullName}'s BMI (${john.bmi}) is higher than ${mark.fullName}'s BMI (${mark.bmi})`)
+// }
 
-    //----------------Iteration: the for loop---------------------
+//----------------Iteration: the for loop---------------------
 
-    // console.log('lifting weights repitition 1 ☔')
-    // console.log('lifting weights repitition 2 ☔')
-    // console.log('lifting weights repitition 3 ☔')
-    // console.log('lifting weights repitition 4 ☔')
-    // console.log('lifting weights repitition 5 ☔')
-    // console.log('lifting weights repitition 6 ☔')
-    // console.log('lifting weights repitition 7 ☔')
-    // console.log('lifting weights repitition 8 ☔')
-    // console.log('lifting weights repitition 9 ☔')
-    // console.log('lifting weights repitition 10 ☔')
+// console.log('lifting weights repitition 1 ☔')
+// console.log('lifting weights repitition 2 ☔')
+// console.log('lifting weights repitition 3 ☔')
+// console.log('lifting weights repitition 4 ☔')
+// console.log('lifting weights repitition 5 ☔')
+// console.log('lifting weights repitition 6 ☔')
+// console.log('lifting weights repitition 7 ☔')
+// console.log('lifting weights repitition 8 ☔')
+// console.log('lifting weights repitition 9 ☔')
+// console.log('lifting weights repitition 10 ☔')
 
-    // for loops keeps running while condition is TRUE
-    for(let rep=1; rep <= 10; rep++){
-        console.log(`lifting weights repitition  ${rep}☔`)        
+// for loops keeps running while condition is TRUE
+// for (let rep = 1; rep <= 10; rep++) {
+//   console.log(`lifting weights repitition  ${rep}☔`);
+// }
+
+ const aminArray =[
+        'Amin',
+        'Ullah',
+        2037-1991,
+        'teacher',
+        ['Bacha','Sajid','Mansoor']
+    ];
+    const types =[]
+    for(let i=0;i<aminArray.length;i++){
+        console.log(aminArray[i], typeof aminArray[i]);
+
+        // types[i]=typeof aminArray[i]
+
+types.push(typeof aminArray[i])    }
+    console.log(types)
+
+    const years =[1991,2007,1969,2020];
+    const ages =[];
+    for(let i=0;i<years.length;i++){
+        ages.push(2037-years[i])
     }
+    console.log(ages)
+
+    //----------------Continue and break---------------
+
+
+    console.log('---ONLY STRINGS---')
+    for(let i=0; i<aminArray.length;i++){
+        if(typeof aminArray[i] !== 'string') continue;
+        console.log(aminArray[i], typeof aminArray[i])
+    }
+    console.log('---BREAK WITH NUMBER---')
+    for(let i=0; i<aminArray.length;i++){
+        if(typeof aminArray[i] === 'number') break;
+        console.log(aminArray[i], typeof aminArray[i])
+    }
+
+
+
