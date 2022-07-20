@@ -488,13 +488,23 @@
 // const totals=[bills[0]+tips[0],bills[1]+tips[1],bills[2]+tips[2]]
 // console.log(bills,tips,totals )
 
-const aminArray =[
-    'Amin',
-    'Ullah',
-    2037-1991,
-    'teacher',
-    ['Bacha','Sajid','Mansoor']
-];
+// const aminArray =[
+//     'Amin',
+//     'Ullah',
+//     2037-1991,
+//     'teacher',
+//     ['Bacha','Sajid','Mansoor']
+// ];
+// const amin={
+//     firstName:'Amin',
+//     lastName:'Ullah',
+//     age:2037-1991,
+//     job:'teacher',
+//     friends:['Bacha','Sajid','Mansoor']
+// }
+
+//-----------------Dot vs Bracket Notation-----------------
+
 const amin={
     firstName:'Amin',
     lastName:'Ullah',
@@ -502,4 +512,27 @@ const amin={
     job:'teacher',
     friends:['Bacha','Sajid','Mansoor']
 }
+console.log(amin);
+console.log(amin.lastName)
+console.log(amin['lastName'])
 
+const nameKey='Name';
+console.log(amin['first' + nameKey]);
+console.log(amin['last' + nameKey]);
+
+const interestedIn=prompt('what do you know about Amin? Choose between firstName, lastName, age,job, and friends')
+console.log(amin[interestedIn])
+
+if (amin[interestedIn]){
+    console.log(amin[interestedIn])
+}else{
+    console.log('Wrong request! Choose between firstName, lastName, age,job, and friends')
+}
+
+amin.location='Swat';
+amin['twitter']='@YousafzaiAmin'
+console.log(amin)
+
+// Challenge
+//"Amin has 3 friends, and his best friend is called Bacha"
+console.log (`${amin.firstName} has ${amin.friends.length} friends, and his best friend is called ${amin.friends[0]}`)
