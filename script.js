@@ -505,34 +505,62 @@
 
 //-----------------Dot vs Bracket Notation-----------------
 
+// const amin={
+//     firstName:'Amin',
+//     lastName:'Ullah',
+//     age:2037-1991,
+//     job:'teacher',
+//     friends:['Bacha','Sajid','Mansoor']
+// }
+// console.log(amin);
+// console.log(amin.lastName)
+// console.log(amin['lastName'])
+
+// const nameKey='Name';
+// console.log(amin['first' + nameKey]);
+// console.log(amin['last' + nameKey]);
+
+// const interestedIn=prompt('what do you know about Amin? Choose between firstName, lastName, age,job, and friends')
+// console.log(amin[interestedIn])
+
+// if (amin[interestedIn]){
+//     console.log(amin[interestedIn])
+// }else{
+//     console.log('Wrong request! Choose between firstName, lastName, age,job, and friends')
+// }
+
+// amin.location='Swat';
+// amin['twitter']='@YousafzaiAmin'
+// console.log(amin)
+
+// // Challenge
+// //"Amin has 3 friends, and his best friend is called Bacha"
+// console.log (`${amin.firstName} has ${amin.friends.length} friends, and his best friend is called ${amin.friends[0]}`)
+
 const amin={
-    firstName:'Amin',
-    lastName:'Ullah',
-    age:2037-1991,
-    job:'teacher',
-    friends:['Bacha','Sajid','Mansoor']
-}
-console.log(amin);
-console.log(amin.lastName)
-console.log(amin['lastName'])
+        firstName:'Amin',
+        lastName:'Ullah',
+        birthYear:1991,
+        job:'teacher',
+        friends:['Bacha','Sajid','Mansoor'],
+        hasDriversLicense:true,
 
-const nameKey='Name';
-console.log(amin['first' + nameKey]);
-console.log(amin['last' + nameKey]);
+        // calcAge: function (birthYear){
+        //     return 2037 - birthYear
+        // }
 
-const interestedIn=prompt('what do you know about Amin? Choose between firstName, lastName, age,job, and friends')
-console.log(amin[interestedIn])
+        // calcAge: function(){
+        //     console.log(this);
+        //     return 2037 - this.birthYear;
+        // }
 
-if (amin[interestedIn]){
-    console.log(amin[interestedIn])
-}else{
-    console.log('Wrong request! Choose between firstName, lastName, age,job, and friends')
-}
-
-amin.location='Swat';
-amin['twitter']='@YousafzaiAmin'
-console.log(amin)
-
-// Challenge
-//"Amin has 3 friends, and his best friend is called Bacha"
-console.log (`${amin.firstName} has ${amin.friends.length} friends, and his best friend is called ${amin.friends[0]}`)
+        calcAge: function(){
+            this.age= 2037 - this.birthYear;
+            return this.age;
+        }
+    };
+    console.log(amin.age);
+    console.log(amin.age);
+    console.log(amin.age);
+    console.log(amin.calcAge());
+    // console.log(amin['calcAge'](1991))
