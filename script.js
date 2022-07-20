@@ -537,13 +537,13 @@
 // //"Amin has 3 friends, and his best friend is called Bacha"
 // console.log (`${amin.firstName} has ${amin.friends.length} friends, and his best friend is called ${amin.friends[0]}`)
 
-const amin={
-        firstName:'Amin',
-        lastName:'Ullah',
-        birthYear:1991,
-        job:'teacher',
-        friends:['Bacha','Sajid','Mansoor'],
-        hasDriversLicense:true,
+// const amin={
+//         firstName:'Amin',
+//         lastName:'Ullah',
+//         birthYear:1991,
+//         job:'teacher',
+//         friends:['Bacha','Sajid','Mansoor'],
+        // hasDriversLicense:true,
 
         // calcAge: function (birthYear){
         //     return 2037 - birthYear
@@ -554,20 +554,53 @@ const amin={
         //     return 2037 - this.birthYear;
         // }
 
-        calcAge: function(){
-            this.age= 2037 - this.birthYear;
-            return this.age;
-        },
-        getSummary:function(){
-            return `${this.firstName} is a ${this.calcAge()} old ${this.job}, and he has ${this.hasDriversLicense ? 'a':'no'} driver's license`
-        }
-    };
-    console.log(amin.calcAge());
-    console.log(amin.age);
-    console.log(amin.age);
-    console.log(amin.age);
+    //     calcAge: function(){
+    //         this.age= 2037 - this.birthYear;
+    //         return this.age;
+    //     },
+    //     getSummary:function(){
+    //         return `${this.firstName} is a ${this.calcAge()} old ${this.job}, and he has ${this.hasDriversLicense ? 'a':'no'} driver's license `
+    //     }
+    // };
+    // console.log(amin.calcAge());
+    // console.log(amin.age);
+    // console.log(amin.age);
+    // console.log(amin.age);
     // console.log(amin['calcAge'](1991))
 
     //Challenge
     //"amin is a 46 years old teacher. and he has a driver license"
-    console.log(amin.getSummary())
+    // console.log(amin.getSummary())
+
+    const mark ={
+        fullName:'Mark Miller',
+        mass:78,
+        height:1.69,
+        calcBMI:function(){
+            this.bmi=this.mass/this.height ** 2;
+            return this.bmi
+        }
+    };
+
+    const john={
+        fullName:'john Smith',
+        mass:92,
+        height:1.95,
+        calcBMI:function(){
+            this.bmi=this.mass/this.height ** 2;
+            return this.bmi
+        }
+    }
+
+    mark.calcBMI();
+    john.calcBMI();
+    console.log(mark.bmi, john.bmi)
+    // console.log(john.bmi)
+
+    //"john Smith's BMI (28.3) is higher Than Mark Miller's (23.9) "
+
+    if (mark.bmi > john.bmi){
+        console.log(`${mark.fullName}'s BMI (${mark.bmi}) is higher than ${john.fullName}'s BMI (${john.bmi})`)
+    }else if(john.bmi > mark.bmi){
+        console.log(`${john.fullName}'s BMI (${john.bmi}) is higher than ${mark.fullName}'s BMI (${mark.bmi})`)
+    }
