@@ -572,35 +572,53 @@
     //"amin is a 46 years old teacher. and he has a driver license"
     // console.log(amin.getSummary())
 
-    const mark ={
-        fullName:'Mark Miller',
-        mass:78,
-        height:1.69,
-        calcBMI:function(){
-            this.bmi=this.mass/this.height ** 2;
-            return this.bmi
-        }
-    };
+    // const mark ={
+    //     fullName:'Mark Miller',
+    //     mass:78,
+    //     height:1.69,
+    //     calcBMI:function(){
+    //         this.bmi=this.mass/this.height ** 2;
+    //         return this.bmi
+    //     }
+    // };
 
-    const john={
-        fullName:'john Smith',
-        mass:92,
-        height:1.95,
-        calcBMI:function(){
-            this.bmi=this.mass/this.height ** 2;
-            return this.bmi
-        }
-    }
+    // const john={
+    //     fullName:'john Smith',
+    //     mass:92,
+    //     height:1.95,
+    //     calcBMI:function(){
+    //         this.bmi=this.mass/this.height ** 2;
+    //         return this.bmi
+    //     }
+    // }
 
-    mark.calcBMI();
-    john.calcBMI();
-    console.log(mark.bmi, john.bmi)
+    // mark.calcBMI();
+    // john.calcBMI();
+    // console.log(mark.bmi, john.bmi)
     // console.log(john.bmi)
 
     //"john Smith's BMI (28.3) is higher Than Mark Miller's (23.9) "
 
-    if (mark.bmi > john.bmi){
-        console.log(`${mark.fullName}'s BMI (${mark.bmi}) is higher than ${john.fullName}'s BMI (${john.bmi})`)
-    }else if(john.bmi > mark.bmi){
-        console.log(`${john.fullName}'s BMI (${john.bmi}) is higher than ${mark.fullName}'s BMI (${mark.bmi})`)
+    // if (mark.bmi > john.bmi){
+    //     console.log(`${mark.fullName}'s BMI (${mark.bmi}) is higher than ${john.fullName}'s BMI (${john.bmi})`)
+    // }else if(john.bmi > mark.bmi){
+    //     console.log(`${john.fullName}'s BMI (${john.bmi}) is higher than ${mark.fullName}'s BMI (${mark.bmi})`)
+    // }
+
+    //----------------Iteration: the for loop---------------------
+
+    // console.log('lifting weights repitition 1 ☔')
+    // console.log('lifting weights repitition 2 ☔')
+    // console.log('lifting weights repitition 3 ☔')
+    // console.log('lifting weights repitition 4 ☔')
+    // console.log('lifting weights repitition 5 ☔')
+    // console.log('lifting weights repitition 6 ☔')
+    // console.log('lifting weights repitition 7 ☔')
+    // console.log('lifting weights repitition 8 ☔')
+    // console.log('lifting weights repitition 9 ☔')
+    // console.log('lifting weights repitition 10 ☔')
+
+    // for loops keeps running while condition is TRUE
+    for(let rep=1; rep <= 10; rep++){
+        console.log(`lifting weights repitition  ${rep}☔`)        
     }
