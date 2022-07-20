@@ -620,42 +620,80 @@
 //   console.log(`lifting weights repitition  ${rep}☔`);
 // }
 
- const aminArray =[
-        'Amin',
-        'Ullah',
-        2037-1991,
-        'teacher',
-        ['Bacha','Sajid','Mansoor']
-    ];
-    const types =[]
-    for(let i=0;i<aminArray.length;i++){
-        console.log(aminArray[i], typeof aminArray[i]);
+//  const aminArray =[
+//         'Amin',
+//         'Ullah',
+//         2037-1991,
+//         'teacher',
+//         ['Bacha','Sajid','Mansoor']
+//     ];
+//     const types =[]
+//     for(let i=0;i<aminArray.length;i++){
+//         console.log(aminArray[i], typeof aminArray[i]);
 
-        // types[i]=typeof aminArray[i]
+//         // types[i]=typeof aminArray[i]
 
-types.push(typeof aminArray[i])    }
-    console.log(types)
+// types.push(typeof aminArray[i])    }
+//     console.log(types)
 
-    const years =[1991,2007,1969,2020];
-    const ages =[];
-    for(let i=0;i<years.length;i++){
-        ages.push(2037-years[i])
-    }
-    console.log(ages)
+//     const years =[1991,2007,1969,2020];
+//     const ages =[];
+//     for(let i=0;i<years.length;i++){
+//         ages.push(2037-years[i])
+//     }
+//     console.log(ages)
 
-    //----------------Continue and break---------------
-
-
-    console.log('---ONLY STRINGS---')
-    for(let i=0; i<aminArray.length;i++){
-        if(typeof aminArray[i] !== 'string') continue;
-        console.log(aminArray[i], typeof aminArray[i])
-    }
-    console.log('---BREAK WITH NUMBER---')
-    for(let i=0; i<aminArray.length;i++){
-        if(typeof aminArray[i] === 'number') break;
-        console.log(aminArray[i], typeof aminArray[i])
-    }
+//     //----------------Continue and break---------------
 
 
+//     console.log('---ONLY STRINGS---')
+//     for(let i=0; i<aminArray.length;i++){
+//         if(typeof aminArray[i] !== 'string') continue;
+//         console.log(aminArray[i], typeof aminArray[i])
+//     }
+//     console.log('---BREAK WITH NUMBER---')
+//     for(let i=0; i<aminArray.length;i++){
+//         if(typeof aminArray[i] === 'number') break;
+//         console.log(aminArray[i], typeof aminArray[i])
+//     }
 
+// const aminArray =[
+//     'Amin',
+//     'Ullah',
+//     2037-1991,
+//     'teacher',
+//     ['Bacha','Sajid','Mansoor'],
+//     true
+// ];
+
+// //0,1,...,4
+// //4,3,...,0
+// for(let i= aminArray.length - 1; i>=0;i--){
+//     console.log(i, aminArray[i])
+// }
+
+// for(let excercise=1; excercise<4;excercise++){
+//     console.log(`-----starting excercise ${excercise}--------`);
+
+
+//     for(let rep=1; rep<6;rep++){
+//         console.log(`Exercise ${excercise}:lifting weight repitition ${rep} 🏋️‍♂️`)
+//     }
+// }
+
+// for (let rep=1;rep<=10; rep++){
+//     console.log(`Leftings weight repitition ${rep} 🏋️‍♂️`)
+// }
+let rep=1;
+while(rep<=10){
+    // console.log(`WHILE:Leftings weight repitition ${rep} 🏋️‍♂️`);
+    rep++;
+}
+
+let dice=Math.trunc(Math.random()*6)+1;
+// console.log(dice)
+while(dice !== 6){
+    console.log(`you rolled a ${dice}`);
+    dice=Math.trunc(Math.random()*6)+1;
+    if(dice===6)console.log('loop is about to end...')
+}
