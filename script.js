@@ -645,7 +645,6 @@
 
 //     //----------------Continue and break---------------
 
-
 //     console.log('---ONLY STRINGS---')
 //     for(let i=0; i<aminArray.length;i++){
 //         if(typeof aminArray[i] !== 'string') continue;
@@ -675,7 +674,6 @@
 // for(let excercise=1; excercise<4;excercise++){
 //     console.log(`-----starting excercise ${excercise}--------`);
 
-
 //     for(let rep=1; rep<6;rep++){
 //         console.log(`Exercise ${excercise}:lifting weight repitition ${rep} 🏋️‍♂️`)
 //     }
@@ -684,16 +682,42 @@
 // for (let rep=1;rep<=10; rep++){
 //     console.log(`Leftings weight repitition ${rep} 🏋️‍♂️`)
 // }
-let rep=1;
-while(rep<=10){
-    // console.log(`WHILE:Leftings weight repitition ${rep} 🏋️‍♂️`);
-    rep++;
-}
+// let rep=1;
+// while(rep<=10){
+// console.log(`WHILE:Leftings weight repitition ${rep} 🏋️‍♂️`);
+//     rep++;
+// }
 
-let dice=Math.trunc(Math.random()*6)+1;
+// let dice=Math.trunc(Math.random()*6)+1;
 // console.log(dice)
-while(dice !== 6){
-    console.log(`you rolled a ${dice}`);
-    dice=Math.trunc(Math.random()*6)+1;
-    if(dice===6)console.log('loop is about to end...')
+// while(dice !== 6){
+//     console.log(`you rolled a ${dice}`);
+//     dice=Math.trunc(Math.random()*6)+1;
+//     if(dice===6)console.log('loop is about to end...')
+// }
+
+const calcTip = function (bill) {
+  return bill >= 50 && bill <= 300 ? bill * 0.15 : bill * 0.2;
+};
+const bills = [22, 295, 176, 440, 37, 105, 10, 1100, 86, 52];
+const tips = [];
+const totals = [];
+for (let i = 0; i < bills.length; i++) {
+  const tip = calcTip(bills[i]);
+  tips.push(tip);
+  totals.push(tip + bills[i]);
 }
+console.log(bills, tips, totals);
+
+const calcAverage=function(arr){
+    let sum=0;
+    for(let i=0; i< arr.length; i++){
+        // sum=sum+arr[i]
+        sum += arr[i]
+    }
+    console.log(sum)
+    return sum / arr.length
+}
+console.log(calcAverage([2,3,7]))
+console.log(calcAverage(totals))
+console.log(calcAverage(tips))
