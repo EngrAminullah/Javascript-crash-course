@@ -722,8 +722,35 @@
 // console.log(calcAverage(totals))
 // console.log(calcAverage(tips))
 
-const x = "23";
-if (x === 23) console.log(23);
+// const x = "23";
+// if (x === 23) console.log(23);
 
-const calcAge = (birthYear) => 2037 - birthYear;
-console.log(calcAge(1991));
+// const calcAge = (birthYear) => 2037 - birthYear;
+// console.log(calcAge(1991));
+
+/////------------- The this keyword---------------
+console.log(this);
+
+const calcAge = function (birthYear) {
+  console.log(2037 - birthYear);
+  console.log(this);
+};
+calcAge(1993);
+
+const calcAgeArrow = (birthYear) => {
+  console.log(2037 - birthYear);
+  console.log(this);
+};
+calcAgeArrow(1993);
+
+const person = {
+  firstName: "Amin",
+  secondName: "Ullah",
+  id: 5522,
+  fullName: function () {
+    return this.firstName + " " + this.secondName;
+  },
+};
+let pes = person;
+
+console.log("person", person.fullName());
