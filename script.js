@@ -860,43 +860,72 @@ const restaurant = {
     console.log(otherIngredient);
   },
 };
-/////-----------------------Rest Pattern & Parameters---------------
-//// 1)-------Destructuring-------------------------------
+console.log("-------------- OR -----------");
+////--------Use ANY data type, return ANY data type, short-circuiting----------
 
-///--------SPREAD, because on RIGHT side of =
-const arr = [1, 2, ...[3, 4]];
+console.log(3 || "Jonas");
+console.log("" || "Jonas");
+console.log(true || 0);
+console.log(undefined || null);
 
-///--------REST, because on LEFT side of =
+console.log(undefined || 0 || "" || "Hello" || 23 || null);
 
-const [a, b, ...others] = [1, 2, 3, 4, 5];
-console.log(a, b, others);
+restaurant.numGuests = 23;
+const guests1 = restaurant.numGuests ? restaurant.numGuests : 10;
+console.log(guests1);
 
-const [pizza, , risotto, ...otherFood] = [
-  ...restaurant.mainMenu,
-  ...restaurant.starterMenu,
-];
-console.log(pizza, risotto, otherFood);
+const guests2 = restaurant.numGuests || 10;
+console.log(guests2);
 
-////------Objects---------------
-const { sat, ...weekdays } = restaurant.openingHours;
-console.log(weekdays);
+console.log("-------------- AND -----------");
+console.log(0 && "Jonas");
+console.log(7 && "Jonas");
 
-///// 2)-----------Functions--------------------
-const add = function (...numbers) {
-  let sum = 0;
-  for (let i = 0; i < numbers.length; i++) sum += numbers[i];
-  console.log(sum);
-};
-add(2, 3);
-add(2, 3, 7, 5);
-add(8, 2, 5, 3, 2, 1, 4);
+console.log("Hello" && 23 && null && "jonas");
+//practical example
+if (restaurant.orderPizza) {
+  restaurant.orderPizza("mushrooms", "spinach");
+}
 
-const x = [23, 5, 7];
-add(...x);
+restaurant.orderPizza && restaurant.orderPizza("mushrooms", "spinach");
 
-restaurant.orderPizza("mushrooms", "onion", "olives", "spinach");
-restaurant.orderPizza("mushrooms");
-////------------------------The Spread Operator---------------------
+// /////-----------------------Rest Pattern & Parameters---------------
+// //// 1)-------Destructuring-------------------------------
+
+// ///--------SPREAD, because on RIGHT side of =
+// const arr = [1, 2, ...[3, 4]];
+
+// ///--------REST, because on LEFT side of =
+
+// const [a, b, ...others] = [1, 2, 3, 4, 5];
+// console.log(a, b, others);
+
+// const [pizza, , risotto, ...otherFood] = [
+//   ...restaurant.mainMenu,
+//   ...restaurant.starterMenu,
+// ];
+// console.log(pizza, risotto, otherFood);
+
+// ////------Objects---------------
+// const { sat, ...weekdays } = restaurant.openingHours;
+// console.log(weekdays);
+
+// ///// 2)-----------Functions--------------------
+// const add = function (...numbers) {
+//   let sum = 0;
+//   for (let i = 0; i < numbers.length; i++) sum += numbers[i];
+//   console.log(sum);
+// };
+// add(2, 3);
+// add(2, 3, 7, 5);
+// add(8, 2, 5, 3, 2, 1, 4);
+
+// const x = [23, 5, 7];
+// add(...x);
+
+// restaurant.orderPizza("mushrooms", "onion", "olives", "spinach");
+// restaurant.orderPizza("mushrooms");
+// ////------------------------The Spread Operator---------------------
 // const arr = [7, 8, 9];
 // const badNewArr = [1, 2, arr[0], arr[1], arr[2]];
 // console.log(badNewArr);
