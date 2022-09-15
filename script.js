@@ -1102,4 +1102,4 @@ const [gk, ...fieldPlayers] = players1;
 console.log(gk, fieldPlayers);
 
 /// 3.
-const allPlayers
+// const allPlayers
