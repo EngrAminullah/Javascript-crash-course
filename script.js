@@ -811,86 +811,86 @@
 // const [p = 1, q = 1, r = 1] = [8, 9];
 // console.log(p, q, r);
 
-///-------------Destructuring Objects----------------
+// ///-------------Destructuring Objects----------------
 
-const restaurant = {
-  name: "Classico Italiano",
-  location: "Via Angelo Tevanti 23, Firenze, Italy",
-  categories: ["Italian", "Pizzeria", "Vegetrian", "Organic"],
-  starterMenu: ["Focaccia", "Bruschetta", "Garlic Bread", "Caprese Salad"],
-  mainMenu: ["Pizza", "Pasta", "Risotto"],
+// const restaurant = {
+//   name: "Classico Italiano",
+//   location: "Via Angelo Tevanti 23, Firenze, Italy",
+//   categories: ["Italian", "Pizzeria", "Vegetrian", "Organic"],
+//   starterMenu: ["Focaccia", "Bruschetta", "Garlic Bread", "Caprese Salad"],
+//   mainMenu: ["Pizza", "Pasta", "Risotto"],
 
-  openingHours: {
-    thu: {
-      open: 12,
-      close: 22,
-    },
-    fri: {
-      open: 11,
-      close: 23,
-    },
-    sat: {
-      open: 0, //open 24 hours
-      close: 24,
-    },
-  },
+//   openingHours: {
+//     thu: {
+//       open: 12,
+//       close: 22,
+//     },
+//     fri: {
+//       open: 11,
+//       close: 23,
+//     },
+//     sat: {
+//       open: 0, //open 24 hours
+//       close: 24,
+//     },
+//   },
 
-  order: function (starterIndex, mainIndex) {
-    return [this.starterMenu[starterIndex], this.mainMenu[mainIndex]];
-  },
+//   order: function (starterIndex, mainIndex) {
+//     return [this.starterMenu[starterIndex], this.mainMenu[mainIndex]];
+//   },
 
-  orderDelivery: function ({
-    starterIndex = 1,
-    mainIndex = 0,
-    time = "20:00",
-    address,
-  }) {
-    console.log(
-      `Order Received! ${this.starterMenu[starterIndex]} and ${this.mainMenu[mainIndex]} will be delivered to ${address} at ${time}`
-    );
-  },
+//   orderDelivery: function ({
+//     starterIndex = 1,
+//     mainIndex = 0,
+//     time = "20:00",
+//     address,
+//   }) {
+//     console.log(
+//       `Order Received! ${this.starterMenu[starterIndex]} and ${this.mainMenu[mainIndex]} will be delivered to ${address} at ${time}`
+//     );
+//   },
 
-  orderPasta: function (ing1, ing2, ing3) {
-    console.log(
-      `Here is your delicious pizza with ${ing1}, ${ing2} and ${ing3}`
-    );
-  },
-  orderPizza: function (mainIngredient, ...otherIngredient) {
-    console.log(mainIngredient);
-    console.log(otherIngredient);
-  },
-};
-////////------------Logical Assignment Operator-------------------
-const rest1 = {
-  name: "Capri",
-  // numGuests: 20,
-  numGuests: 0,
-};
-const rest2 = {
-  name: "La Piazza",
-  owner: "Giovanni Rossi",
-};
-////OR assignment Operator
-//rest1.numGuests = rest1.numGuests || 10;
-//rest2.numGuests = rest2.numGuests || 10;
-// rest1.numGuests ||= 10;
-// rest2.numGuests ||= 10;
+//   orderPasta: function (ing1, ing2, ing3) {
+//     console.log(
+//       `Here is your delicious pizza with ${ing1}, ${ing2} and ${ing3}`
+//     );
+//   },
+//   orderPizza: function (mainIngredient, ...otherIngredient) {
+//     console.log(mainIngredient);
+//     console.log(otherIngredient);
+//   },
+// };
+// ////////------------Logical Assignment Operator-------------------
+// const rest1 = {
+//   name: "Capri",
+//   // numGuests: 20,
+//   numGuests: 0,
+// };
+// const rest2 = {
+//   name: "La Piazza",
+//   owner: "Giovanni Rossi",
+// };
+// ////OR assignment Operator
+// //rest1.numGuests = rest1.numGuests || 10;
+// //rest2.numGuests = rest2.numGuests || 10;
+// // rest1.numGuests ||= 10;
+// // rest2.numGuests ||= 10;
 
-////Nullish assignment Operator(Null or undefined)
+// ////Nullish assignment Operator(Null or undefined)
 
-rest1.numGuests ??= 10;
-rest2.numGuests ??= 10;
+// rest1.numGuests ??= 10;
+// rest2.numGuests ??= 10;
 
-////------------AND assignment Operator
+// ////------------AND assignment Operator
 
-// rest1.owner = rest1.owner && "<ANONYMOUS>";
-// rest2.owner = rest2.owner && "<ANONYMOUS>";
+// // rest1.owner = rest1.owner && "<ANONYMOUS>";
+// // rest2.owner = rest2.owner && "<ANONYMOUS>";
 
-rest1.owner &&= "<ANONYMOUS>";
-rest2.owner &&= "<ANONYMOUS>";
+// rest1.owner &&= "<ANONYMOUS>";
+// rest2.owner &&= "<ANONYMOUS>";
 
-console.log(rest1);
-console.log(rest2);
+// console.log(rest1);
+// console.log(rest2);
 
 // ////----------------------The Nullish Coalescing Operator(??)-----------------
 
@@ -1051,3 +1051,44 @@ console.log(rest2);
 //   fri: { open: o, close: c },
 // } = openingHours;
 // console.log(o, c);
+
+const game = {
+  team1: "Bareyn Munich",
+  team2: "Borrusia Dortmund",
+  players: [
+    [
+      "Neuer",
+      "Pavard",
+      "Martinez",
+      "Alaba",
+      "Davies",
+      "Kimmich",
+      "Goretzka",
+      "Coman",
+      "Muller",
+      "Gnarby",
+      "Lewandowski",
+    ],
+    [
+      "Burki",
+      "Schulz",
+      "Hummels",
+      "Akanji",
+      "Hakimi",
+      "Weigl",
+      "Witsel",
+      "Hazard",
+      "Brandt",
+      "Sancho",
+      "Gotze",
+    ],
+  ],
+  score: "4:0",
+  scored: ["Lewandowski", "Gnarby", "Lewandowski", "Hummels"],
+  date: "Nov 9th 2037",
+  odds: {
+    team1: 1.33,
+    x: 3.25,
+    team2: 6.5,
+  },
+};
