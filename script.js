@@ -811,55 +811,62 @@
 // const [p = 1, q = 1, r = 1] = [8, 9];
 // console.log(p, q, r);
 
-// ///-------------Destructuring Objects----------------
+///-------------Destructuring Objects----------------
 
-// const restaurant = {
-//   name: "Classico Italiano",
-//   location: "Via Angelo Tevanti 23, Firenze, Italy",
-//   categories: ["Italian", "Pizzeria", "Vegetrian", "Organic"],
-//   starterMenu: ["Focaccia", "Bruschetta", "Garlic Bread", "Caprese Salad"],
-//   mainMenu: ["Pizza", "Pasta", "Risotto"],
+const restaurant = {
+  name: "Classico Italiano",
+  location: "Via Angelo Tevanti 23, Firenze, Italy",
+  categories: ["Italian", "Pizzeria", "Vegetrian", "Organic"],
+  starterMenu: ["Focaccia", "Bruschetta", "Garlic Bread", "Caprese Salad"],
+  mainMenu: ["Pizza", "Pasta", "Risotto"],
 
-//   openingHours: {
-//     thu: {
-//       open: 12,
-//       close: 22,
-//     },
-//     fri: {
-//       open: 11,
-//       close: 23,
-//     },
-//     sat: {
-//       open: 0, //open 24 hours
-//       close: 24,
-//     },
-//   },
+  openingHours: {
+    thu: {
+      open: 12,
+      close: 22,
+    },
+    fri: {
+      open: 11,
+      close: 23,
+    },
+    sat: {
+      open: 0, //open 24 hours
+      close: 24,
+    },
+  },
 
-//   order: function (starterIndex, mainIndex) {
-//     return [this.starterMenu[starterIndex], this.mainMenu[mainIndex]];
-//   },
+  order: function (starterIndex, mainIndex) {
+    return [this.starterMenu[starterIndex], this.mainMenu[mainIndex]];
+  },
 
-//   orderDelivery: function ({
-//     starterIndex = 1,
-//     mainIndex = 0,
-//     time = "20:00",
-//     address,
-//   }) {
-//     console.log(
-//       `Order Received! ${this.starterMenu[starterIndex]} and ${this.mainMenu[mainIndex]} will be delivered to ${address} at ${time}`
-//     );
-//   },
+  orderDelivery: function ({
+    starterIndex = 1,
+    mainIndex = 0,
+    time = "20:00",
+    address,
+  }) {
+    console.log(
+      `Order Received! ${this.starterMenu[starterIndex]} and ${this.mainMenu[mainIndex]} will be delivered to ${address} at ${time}`
+    );
+  },
 
-//   orderPasta: function (ing1, ing2, ing3) {
-//     console.log(
-//       `Here is your delicious pizza with ${ing1}, ${ing2} and ${ing3}`
-//     );
-//   },
-//   orderPizza: function (mainIngredient, ...otherIngredient) {
-//     console.log(mainIngredient);
-//     console.log(otherIngredient);
-//   },
-// };
+  orderPasta: function (ing1, ing2, ing3) {
+    console.log(
+      `Here is your delicious pizza with ${ing1}, ${ing2} and ${ing3}`
+    );
+  },
+  orderPizza: function (mainIngredient, ...otherIngredient) {
+    console.log(mainIngredient);
+    console.log(otherIngredient);
+  },
+};
+const menu = [...restaurant.starterMenu, ...restaurant.mainMenu];
+for (const item of menu) console.log(item);
+
+for (const [i, el] of menu.entries()) {
+  console.log(`${i + 1}: ${el}`);
+}
+// console.log([...menu.entries()]);
 // ////////------------Logical Assignment Operator-------------------
 // const rest1 = {
 //   name: "Capri",
@@ -1052,77 +1059,77 @@
 // } = openingHours;
 // console.log(o, c);
 
-const game = {
-  team1: "Bareyn Munich",
-  team2: "Borrusia Dortmund",
-  players: [
-    [
-      "Neuer",
-      "Pavard",
-      "Martinez",
-      "Alaba",
-      "Davies",
-      "Kimmich",
-      "Goretzka",
-      "Coman",
-      "Muller",
-      "Gnarby",
-      "Lewandowski",
-    ],
-    [
-      "Burki",
-      "Schulz",
-      "Hummels",
-      "Akanji",
-      "Hakimi",
-      "Weigl",
-      "Witsel",
-      "Hazard",
-      "Brandt",
-      "Sancho",
-      "Gotze",
-    ],
-  ],
-  score: "4:0",
-  scored: ["Lewandowski", "Gnarby", "Lewandowski", "Hummels"],
-  date: "Nov 9th 2037",
-  odds: {
-    team1: 11.33,
-    x: 3.25,
-    team2: 6.5,
-  },
-};
+// const game = {
+//   team1: "Bareyn Munich",
+//   team2: "Borrusia Dortmund",
+//   players: [
+//     [
+//       "Neuer",
+//       "Pavard",
+//       "Martinez",
+//       "Alaba",
+//       "Davies",
+//       "Kimmich",
+//       "Goretzka",
+//       "Coman",
+//       "Muller",
+//       "Gnarby",
+//       "Lewandowski",
+//     ],
+//     [
+//       "Burki",
+//       "Schulz",
+//       "Hummels",
+//       "Akanji",
+//       "Hakimi",
+//       "Weigl",
+//       "Witsel",
+//       "Hazard",
+//       "Brandt",
+//       "Sancho",
+//       "Gotze",
+//     ],
+//   ],
+//   score: "4:0",
+//   scored: ["Lewandowski", "Gnarby", "Lewandowski", "Hummels"],
+//   date: "Nov 9th 2037",
+//   odds: {
+//     team1: 11.33,
+//     x: 3.25,
+//     team2: 6.5,
+//   },
+// };
 
-/// 1.
-const [players1, players2] = game.players;
-console.log(players1, players2);
+// /// 1.
+// const [players1, players2] = game.players;
+// console.log(players1, players2);
 
-/// 2.
-const [gk, ...fieldPlayers] = players1;
-console.log(gk, fieldPlayers);
+// /// 2.
+// const [gk, ...fieldPlayers] = players1;
+// console.log(gk, fieldPlayers);
 
-/// 3.
+// /// 3.
 
-const allPlayers = [...players1, ...players2];
-console.log(allPlayers);
+// const allPlayers = [...players1, ...players2];
+// console.log(allPlayers);
 
-/// 4.
-const players1Final = [...players1, "Thiago", "Coutinho", "Periscic"];
+// /// 4.
+// const players1Final = [...players1, "Thiago", "Coutinho", "Periscic"];
 
-/// 5.
-const {
-  odds: { team1, x: draw, team2 },
-} = game;
-console.log(team1, draw, team2);
+// /// 5.
+// const {
+//   odds: { team1, x: draw, team2 },
+// } = game;
+// console.log(team1, draw, team2);
 
-/// 6.
-const printGoals = function (...players) {
-  console.log(`${players.length} goals were scored`);
-};
-// printGoals(" Davies", "Muller", " LLewandowski", "Kimmich");
-// printGoals(" Davies", "Muller");
-printGoals(...game.scored);
+// /// 6.
+// const printGoals = function (...players) {
+//   console.log(`${players.length} goals were scored`);
+// };
+// // printGoals(" Davies", "Muller", " LLewandowski", "Kimmich");
+// // printGoals(" Davies", "Muller");
+// printGoals(...game.scored);
 
-/// 7.
-team1 < team2 && console.log("Team 1 is more likely to win");
-team1 > team2 && console.log("Team 2 is more likely to win");
+// /// 7.
+// team1 < team2 && console.log("Team 1 is more likely to win");
+// team1 > team2 && console.log("Team 2 is more likely to win");
